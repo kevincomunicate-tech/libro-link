@@ -22,11 +22,54 @@ Permitir a una biblioteca comunitaria registrar, consultar, prestar y devolver l
 
 Además de las funcionalidades básicas, el sistema incluye un **puntaje de confiabilidad** para cada usuario:
 
-- La devolución a tiempo sube el puntaje.
-- La devolución con retraso baja el puntaje.
+- La devolución a tiempo sube el puntaje (+2).
+- La devolución con retraso baja el puntaje (-5).
 - Se puede generar un ranking de los usuarios más confiables.
 
 Esto es lógica pura (sin parte visual) y le da un diferenciador claro al proyecto.
+
+---
+
+## Cómo ejecutar
+
+Requiere Python 3.9 o superior. No necesita instalar nada más.
+
+```
+python main.py
+```
+
+Primer inicio: usuario `admin`, contraseña `admin123` (el programa recomienda cambiarla).
+
+Pruebas automáticas:
+
+```
+python -m unittest -v
+```
+
+## Reglas de negocio
+
+| Regla | Valor |
+|-------|-------|
+| Multa por retraso | $2.000 COP por cada día después del vencimiento |
+| Usuario regular | hasta 3 libros a la vez, 14 días de préstamo |
+| Usuario premium | hasta 5 libros a la vez, 21 días de préstamo |
+| Puntaje inicial | 50 (rango de 0 a 100) |
+| Con multa pendiente o préstamo atrasado | no puede pedir nuevos libros hasta devolver y pagar |
+
+La multa crece cada día mientras el libro no se devuelve; al devolverlo queda fija y pendiente hasta que el administrador registra el pago.
+
+## Funcionalidades
+
+- Inicio de sesión del administrador.
+- CRUD de usuarios: registrar, listar, buscar por nombre o correo, ver ficha e historial, editar y eliminar.
+- CRUD de libros: registrar con ISBN y ejemplares, listar, buscar por título, autor o ISBN, editar y eliminar.
+- Préstamos y devoluciones con cálculo automático de vencimiento, retraso y multa.
+- Registro del pago de multas.
+- Reportes: resumen, préstamos activos y atrasados, multas pendientes, ranking de confiabilidad, libros más prestados e historial.
+- Exportación de reportes a CSV.
+- Persistencia automática en JSON y manejo de archivos dañados.
+
+Más detalle en `docs/decisiones.md`, `docs/plan_tecnico.md` y `tests/PLAN_PRUEBAS.md`.
 
 ---
 
@@ -44,8 +87,10 @@ Cualquier integrante debe poder explicar cualquier parte del proyecto.
 
 ---
 
-## Estructura del proyecto (a crear)
-librolink/
+## Estructura del proyecto
+
+```
+libro-link/
 ├── main.py
 ├── models/
 │   ├── usuario.py
@@ -55,15 +100,21 @@ librolink/
 │   ├── usuario_service.py
 │   ├── libro_service.py
 │   ├── prestamo_service.py
-│   └── reporte_service.py
+│   ├── reporte_service.py
+│   ├── auth_service.py
+│   ├── errores.py
+│   └── utilidades.py
 ├── persistence/
 │   ├── json_repository.py
 │   └── csv_exporter.py
 ├── validators/
 │   └── validaciones.py
+├── ui/
+│   └── consola.py
 ├── data/
 ├── tests/
-└── docs
+└── docs/
+```
 
 ---
 
