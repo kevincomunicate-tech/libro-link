@@ -1,10 +1,14 @@
 class ReglaNegocioError(Exception):
-    """Una operación no cumple las reglas del sistema."""
+    pass
 
 
-class EntidadNoEncontradaError(Exception):
-    """No se encontró la entidad solicitada."""
+class ValidacionError(ReglaNegocioError):
+    pass
+
+
+class EntidadNoEncontradaError(ReglaNegocioError):
+    pass
 
 
 class PersistenciaError(Exception):
-    """Error al leer o guardar información persistente."""
+    pass
