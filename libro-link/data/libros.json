@@ -1,0 +1,42 @@
+[
+  {
+    "id_libro": "L001",
+    "titulo": "1984",
+    "autor": "george orwell",
+    "isbn": "9789584296078",
+    "stock_total": 5,
+    "stock_disponible": 4
+  },
+  {
+    "id_libro": "L002",
+    "titulo": "cien años de soledad",
+    "autor": "gabriel garcia marquez",
+    "isbn": "9789585581616",
+    "stock_total": 8,
+    "stock_disponible": 8
+  },
+  {
+    "id_libro": "L003",
+    "titulo": "mientras llueve",
+    "autor": "fernando soto aparicio",
+    "isbn": "9789583002823",
+    "stock_total": 1,
+    "stock_disponible": 1
+  },
+  {
+    "id_libro": "L004",
+    "titulo": "el idiota",
+    "autor": "fiodor dostoiveski",
+    "isbn": "9788420609072",
+    "stock_total": 4,
+    "stock_disponible": 4
+  },
+  {
+    "id_libro": "L005",
+    "titulo": "satanas",
+    "autor": "mario mendoza",
+    "isbn": "9786287650510",
+    "stock_total": 2,
+    "stock_disponible": 2
+  }
+]

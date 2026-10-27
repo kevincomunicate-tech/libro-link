@@ -1,0 +1,9 @@
+[
+  {
+    "id_usuario": "U001",
+    "nombre": "kevin isaza",
+    "email": "kevincomunicate@gmail.com",
+    "rol": "regular",
+    "puntaje_confiabilidad": 50
+  }
+]
