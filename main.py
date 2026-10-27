@@ -146,6 +146,7 @@ def mostrar_rol_opciones():
 
 def convertir_rol(valor):
     atajos = {"1": "regular", "2": "premium"}
+
     return validar_rol(atajos.get(str(valor).strip(), valor))
 
 
