@@ -630,7 +630,7 @@ def iniciar_sesion(app):
     encabezado("INICIO DE SESIÓN")
     for intento in range(1, MAXIMO_INTENTOS_LOGIN + 1):
         usuario = input("Usuario: ").strip()
-        clave = getpass("Contraseña: ")
+        clave = input("Contraseña: ")
         if app.auth.autenticar(usuario, clave):
             app.sesion = usuario
             mensaje_ok(f"Bienvenido, {usuario}.")
