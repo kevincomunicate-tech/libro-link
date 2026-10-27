@@ -1,0 +1,2 @@
+﻿ID préstamo,ID usuario,Usuario,ID libro,Libro,Fecha préstamo,Vence,Fecha devolución,Días de retraso,Multa (COP),Multa pagada,Fecha de pago
+P001,U001,juan perez,L001,el quijote de la mancha,2026-10-27,2026-11-17,,0,0,,

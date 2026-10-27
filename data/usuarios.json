@@ -1,0 +1,16 @@
+[
+  {
+    "id_usuario": "U001",
+    "nombre": "juan perez",
+    "email": "juan@gmial.com",
+    "rol": "premium",
+    "puntaje_confiabilidad": 50
+  },
+  {
+    "id_usuario": "U002",
+    "nombre": "sara muñoz",
+    "email": "sara21@gmail.com",
+    "rol": "regular",
+    "puntaje_confiabilidad": 50
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id_prestamo": "P001",
+    "id_usuario": "U001",
+    "id_libro": "L001",
+    "fecha_prestamo": "2026-10-27",
+    "fecha_vencimiento": "2026-11-17",
+    "fecha_devolucion": null,
+    "multa": 0,
+    "multa_pagada": false,
+    "fecha_pago": null
+  },
+  {
+    "id_prestamo": "P002",
+    "id_usuario": "U001",
+    "id_libro": "L002",
+    "fecha_prestamo": "2026-10-27",
+    "fecha_vencimiento": "2026-11-17",
+    "fecha_devolucion": null,
+    "multa": 0,
+    "multa_pagada": false,
+    "fecha_pago": null
+  }
+]

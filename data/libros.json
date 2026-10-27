@@ -1,0 +1,18 @@
+[
+  {
+    "id_libro": "L001",
+    "titulo": "el quijote de la mancha",
+    "autor": "Miguel de Cervantes Saavedra.",
+    "isbn": "9783161484100",
+    "stock_total": 3,
+    "stock_disponible": 2
+  },
+  {
+    "id_libro": "L002",
+    "titulo": "cien años de soledad",
+    "autor": "gabriel garcia marquez",
+    "isbn": "0306406152",
+    "stock_total": 12,
+    "stock_disponible": 11
+  }
+]
